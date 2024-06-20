@@ -1,0 +1,5 @@
+/* src/index.css */
+@import 'nes.css/css/nes.min.css';
+body {
+  font-family: 'Press Start 2P';
+}
