@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  gap:10px
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+}
+
+.button {
+  margin: 10px 0;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 2.4rem;
+  align-items: center;
+  height: 100vh;
+  width:100%;
+  text-align: center;
+  border: 2px solid red;
+  background-color: rgb(255, 255, 255);
+  gap: 20px;
+}
+
+.title {
+  margin-top: 10px;
+  margin-bottom: 8px; /* Increase the space below the title */
+  /* font-size: 2.5rem; Increase font size for title */
+  /* font-weight: bold; Make the title bold */
+  /* color: #213547; Darker text for contrast */
+  
+   /* } */
+
+
+/* .button { */
+  /* margin-top: 10px 0; Increased margin between buttons for more gap */
+  /* font-size: 1.1rem; Slightly larger button text */
+   /* Button padding for larger clickable area */
+
+/* }  */

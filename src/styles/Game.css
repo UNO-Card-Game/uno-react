@@ -1,0 +1,130 @@
+.title-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.top {
+  display: flex;
+  flex: 1;
+}
+
+.bottom {
+  flex: 3;
+}
+
+.left,
+.right {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.right {
+  margin-right: 0;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.top-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.top-card-container .nes-btn {
+  margin-left: 20px;
+}
+
+.top-card {
+  width: 150px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.top-card.blue {
+  border: 15px solid rgba(0, 0, 255, 0.5);
+  box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.3);
+  background: rgba(0, 0, 255, 0.1);
+}
+
+.top-card.green {
+  border: 15px solid rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.3);
+  background: rgba(0, 255, 0, 0.1);
+}
+
+.top-card.red {
+  border: 15px solid rgba(255, 0, 0, 0.5);
+  box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
+  background: rgba(255, 0, 0, 0.1);
+}
+
+.top-card.yellow {
+  border: 15px solid rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.3);
+  background: rgba(255, 255, 0, 0.1);
+}
+
+.players-table {
+  margin-right: 150px;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+  position: relative;
+}
+
+.color-picker {
+  display: none;
+  position: absolute;
+  margin-top: 2px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-container:hover .color-picker {
+  display: block;
+  opacity: 1;
+}
+
+.current-player {
+  background-color: lightgreen;
+}
+
+.client-turn {
+  background-color: lightgreen;
+}
+
