@@ -1,0 +1,120 @@
+.bottom {
+    flex: 3;
+    width: 100%; /* Full width */
+    max-width: 1200px;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: center; /* Center children vertically */
+   
+  }
+  .nes-table.is-bordered.is-centered.players-table { 
+        margin-right: 120px;
+  }
+  .nes-container.with-title.is-centered {
+    width: 100%; /* Full width */
+    max-width: 1200px;
+
+  }
+  
+
+  .card {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .top-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width */
+    max-width: 1200px;
+    margin-bottom: 20px;
+  }
+  
+  .top-card-container .nes-btn {
+    margin-left: 20px;
+  }
+  
+  .top-card {
+    width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .top-card.blue {
+    border: 10px solid rgba(0, 0, 255, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.3);
+    background: rgba(0, 0, 255, 0.1);
+    border-radius: 15px;
+  }
+  
+  .top-card.green {
+    border: 10px solid rgba(0, 255, 0, 0.5);
+    box-shadow: 0 0 20px 10px rgba(0, 255, 0, 0.3);
+    background: rgba(0, 255, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .top-card.red {
+    border: 10px solid rgba(255, 0, 0, 0.5);
+    box-shadow: 0 0 20px 10px rgba(255, 0, 0, 0.3);
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 15px;
+  }
+  
+  .top-card.yellow {
+    border: 10px solid rgba(255, 255, 0, 0.5);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.3);
+    background: rgba(255, 255, 0, 0.1);
+    border-radius: 25px;
+  }
+  
+  .players-table {
+    margin-right: 150px;
+  }
+  
+  .arrow-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .arrow {
+    font-size: 2rem;
+  }
+  
+  .cards-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card-container {
+    position: relative;
+  }
+  
+  .color-picker {
+    display: none;
+    position: absolute;
+    margin-top: 2px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .card-container:hover .color-picker {
+    display: block;
+    opacity: 1;
+  }
+  
+  .current-player {
+    background-color: lightgreen;
+  }
+  
+  .client-turn {
+    background-color: lightgreen;
+  }
+  
+  

@@ -1,0 +1,31 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1;
+    align-items: center; /* Align items vertically in the center */
+    width: 100%; /* Full width */
+    margin-top: 20px;
+    max-width: 1200px;
+    /*margin: 0 auto; Center horizontally inside the container*/
+    padding: 1px; /* Add padding to avoid touching edges */
+  
+    
+    
+  }
+.left,
+.right {
+  flex: 1;
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 50%; /* Increase width of both sections */
+  height: 100%; /* Reduce height to make them smaller */
+  padding: 1px; /* Add some inner spacing */
+  /* box-sizing: border-box;  */
+ 
+}
+
+.right {
+  margin-right: 0;
+  text-align: right;
+}

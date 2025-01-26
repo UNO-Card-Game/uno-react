@@ -1,19 +1,13 @@
 import path from "path"
-import { defineConfig } from 'vite'
+import { defineConfig ,loadEnv} from 'vite'
 import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
+export default defineConfig(({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), ""); // L
+  return {plugins: [react()],
   server: {
-    port: 3000, // Match backend port
-    proxy: {
-      '/ws': {
-        target: 'ws://localhost:8080',
-        ws: true, // Enable WebSocket proxying
-        changeOrigin: true,
-      },
-    },
+    port: 3000, 
     hmr:{
       host:'localhost',
       port:3001
@@ -24,4 +18,12 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-})
+  build: {
+    outDir: "dist", // Ensure the output directory for production
+  },
+  define: {
+    // Make environment variables available globally
+    "process.env": env,
+  },
+};
+});
