@@ -17,20 +17,12 @@
 # Stage 1: Build React App
 FROM node:22 as build
 WORKDIR /app
-
-# Debug: Show working directory
-RUN pwd
-
 # Copy only package.json first, then install dependencies
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the files
-COPY . . 
-
-# Debug: Show files in /app after copying
-RUN ls -lah /app
-
+# Force copy app
+COPY . /app
 # Ensure build files are created
 RUN npm run build && ls -lah /app/dist  # Debugging step
 
