@@ -4,7 +4,10 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-RUN npm run build
+
+
+# Ensure build files are created
+RUN npm run build && ls -lah /app/dist  # Use `build/` for CRA, `dist/` for Vite
 
 # Stage 2: Serve with NGINX
 FROM nginx:latest
