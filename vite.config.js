@@ -23,7 +23,7 @@ export default defineConfig(({ mode }) => {
   },
   define: {
     // Make environment variables available globally
-    "process.env": env,
+    "process.env": process.env,
   },
 };
 });
