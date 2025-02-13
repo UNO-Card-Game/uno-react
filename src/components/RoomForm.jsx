@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { connectWebSocket } from "../context/WebsocketStore"; // Import WebSocket function
 import "../styles/RoomForm.css";
 const wsBaseUrl = import.meta.env.VITE_WS_BASE_URL;
+console.log(wsBaseUrl,"URL Logged")
 
 const RoomForm = ({ title, endpoint, playerName, setPlayerName, numPlayers, setNumPlayers, roomId, setRoomId }) => {
   const navigate = useNavigate();
@@ -15,7 +16,7 @@ const RoomForm = ({ title, endpoint, playerName, setPlayerName, numPlayers, setN
       room_id: endpoint === "join" ? roomId : undefined,
       max_players: endpoint === "create" ? numPlayers : undefined,
     }).toString();
-             //wsbaseurl  
+             //wsbaseurl           
     const websocketUrl = `${wsBaseUrl}/${endpoint}?${queryParams}`;
     console.log("Connecting to WebSocket:", websocketUrl);
 
