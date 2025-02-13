@@ -8,10 +8,10 @@ export default defineConfig(({ mode }) => {
   return {plugins: [react()],
   server: {
     port: 3000, 
-    hmr:{
-      host:'localhost',
-      port:3001
-    }
+    // hmr:{
+    //   host:'localhost',
+    //   port:3001
+    // }
   },
   resolve: {
     alias: {
