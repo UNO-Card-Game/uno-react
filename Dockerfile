@@ -22,7 +22,7 @@ COPY package*.json ./
 RUN npm install
 
 # Force copy app
-COPY . /app
+COPY . .
 # Ensure build files are created
 RUN npm run build && ls -lah /app/dist  # Debugging step
 
